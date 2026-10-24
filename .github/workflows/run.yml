@@ -93,6 +93,8 @@ jobs:
     needs: [xiaosa, fty]
     runs-on: ubuntu-latest
     if: always()
+    permissions:
+      contents: write
     steps:
       - name: Checkout the branch
         uses: actions/checkout@v7
